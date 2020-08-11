@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="review">
+
+<!-- select 구문의 결과를 HashMap으로 저장할 때 사용할 HashMap 생성 
+(프로퍼티=키이름, 컬럼=컬럼이름, jdbc타입=디비자료형, 자바타입=자바자료형)-->
+<resultMap type="HashMap" id="reviewMap">
+<!-- 기본 자료형을 그대로 사용하는 경우에는 jdbcType과 javaType은 생략 -->
+<result property="reviewid" column="reviewid" />
+<result property="readerid" column="readerid" />
+<result property="bookname" column="bookname" />
+<result property="writer" column="writer" />
+<result property="image" column="image" />
+<result property="writing" column="writing" />
+<result property="regdate" column="regdate" />
+</resultMap>
+
+<!-- review 데이터의 전체 데이터를 가져오는 SQL -->
+<select id="reviewlist" resultMap="reviewMap">
+select * from review
+order by regdate desc
+</select>
+
+<!-- review 테이블의 데이터 개수를 가져오는 SQL -->
+<select id="reviewcount" resultType="java.lang.Integer">
+select count(*)
+from review
+</select>
+
+<!-- review 테이블에서 reviewid를 받아서 하나의 데이터를 가져오는 SQL(상세보기) -->
+<select id="reviewdetail" resultMap="reviewMap" parameterType="java.lang.Integer">
+select * from review where reviewid = #{reviewid}
+</select>
+
+<!-- Map을 받아서 데이터를 삽입하는 SQL -->
+<insert id="reviewinsert" parameterType="java.util.Map">
+insert into review(readerid, bookname, writer, image, writing, regdate)
+values(#{readerid}, #{bookname}, #{writer}, #{image}, #{writing}, #{regdate})
+</insert>
+
+<!-- reviewid를 받아서 삭제하는 SQL -->
+<delete id="reviewdelete" parameterType="java.lang.Integer">
+delete from review where reviewid = #{reviewid}
+</delete>
+
+
+</mapper>
