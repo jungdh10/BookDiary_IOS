@@ -1,0 +1,814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WPe-pA-lsT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--회원가입-->
+        <scene sceneID="YeR-lu-Adh">
+            <objects>
+                <viewController storyboardIdentifier="JoinViewController" id="xnL-vh-KfF" customClass="JoinViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a9c-QM-Mrz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="아이디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aR-P5-qp5">
+                                <rect key="frame" x="35" y="258" width="45" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXH-nS-9Uv">
+                                <rect key="frame" x="35" y="312" width="59" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2z-5y-Ruf">
+                                <rect key="frame" x="35" y="370" width="59" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk4-rM-X16">
+                                <rect key="frame" x="35" y="429" width="59" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UAH-wX-XhC">
+                                <rect key="frame" x="126" y="258" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVw-KZ-YyT">
+                                <rect key="frame" x="126" y="312" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CzN-Qd-5F3">
+                                <rect key="frame" x="126" y="370" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4y5-2M-M4Y">
+                                <rect key="frame" x="126" y="429" width="233" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uvf-je-z4z">
+                                <rect key="frame" x="175" y="509" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="가입하기"/>
+                                <connections>
+                                    <action selector="save:" destination="xnL-vh-KfF" eventType="touchUpInside" id="Lzy-Ki-3G2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="프로필사진" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLq-Da-hXW">
+                                <rect key="frame" x="35" y="164" width="70" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="account.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="KEG-dL-XsT">
+                                <rect key="frame" x="126" y="125" width="82" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="CCC-JO-eiD"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="회원가입" id="ImZ-eK-2ff">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="TnH-0B-6y7">
+                            <connections>
+                                <action selector="pick:" destination="xnL-vh-KfF" id="AIF-pj-SSJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emailInsert" destination="CzN-Qd-5F3" id="7Te-nH-uaz"/>
+                        <outlet property="idInsert" destination="UAH-wX-XhC" id="c3s-zN-MUX"/>
+                        <outlet property="imgInsert" destination="KEG-dL-XsT" id="NeX-RT-W34"/>
+                        <outlet property="nickInsert" destination="4y5-2M-M4Y" id="YCx-28-ADi"/>
+                        <outlet property="pwInsert" destination="uVw-KZ-YyT" id="mBL-og-EyK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5J-Wc-2mY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94874.399999999994" y="-1567.4662668665669"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="czI-tj-R9j">
+            <objects>
+                <viewController id="ZwN-dm-CXY" customClass="ViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jfy-ZF-NmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiK-hG-TtC">
+                                <rect key="frame" x="142" y="112" width="70" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="회원가입"/>
+                                <connections>
+                                    <segue destination="xnL-vh-KfF" kind="show" id="LIg-C8-KKS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H0U-LJ-fwM">
+                                <rect key="frame" x="132" y="182" width="110" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="로그인"/>
+                                <connections>
+                                    <action selector="login:" destination="ZwN-dm-CXY" eventType="touchUpInside" id="cln-q2-bBe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="LTn-S9-CQh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L0l-HC-Ame">
+                        <barButtonItem key="leftBarButtonItem" image="sidemenu.png" id="qO3-0D-HDW">
+                            <color key="tintColor" red="0.25132366041957943" green="0.35388445003580998" blue="0.74423170336787559" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="sidebtn:" destination="ZwN-dm-CXY" id="EtF-Zi-0Y5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="loginbtn" destination="H0U-LJ-fwM" id="rOX-qT-Ri3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMQ-gn-JfB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95642.399999999994" y="-1567.4662668665669"/>
+        </scene>
+        <!--News Table View Controller-->
+        <scene sceneID="MyK-I0-JqE">
+            <objects>
+                <tableViewController storyboardIdentifier="NewsTableViewController" id="PlQ-Ks-oID" customClass="NewsTableViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="K9L-FA-rVp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="oYe-mO-jDQ">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oYe-mO-jDQ" id="lL7-zQ-ocz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PlQ-Ks-oID" id="Dg0-bw-I1n"/>
+                            <outlet property="delegate" destination="PlQ-Ks-oID" id="62X-px-cTJ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="E5A-EK-DXw"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X1b-t2-1E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99055" y="746"/>
+        </scene>
+        <!--News Detail View Controller-->
+        <scene sceneID="G9c-g4-uP2">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailViewController" id="rx1-la-Roo" customClass="NewsDetailViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kxj-wz-Ak9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FW5-gX-VTp">
+                                <rect key="frame" x="16" y="73" width="343" height="574"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zjj-ej-9T3" firstAttribute="trailing" secondItem="FW5-gX-VTp" secondAttribute="trailing" constant="16" id="31n-By-tqf"/>
+                            <constraint firstItem="zjj-ej-9T3" firstAttribute="bottom" secondItem="FW5-gX-VTp" secondAttribute="bottom" constant="20" id="U9s-Ew-IqL"/>
+                            <constraint firstItem="FW5-gX-VTp" firstAttribute="top" secondItem="zjj-ej-9T3" secondAttribute="top" constant="53" id="ebb-h2-k6X"/>
+                            <constraint firstItem="FW5-gX-VTp" firstAttribute="leading" secondItem="zjj-ej-9T3" secondAttribute="leading" constant="16" id="uDr-ez-vmj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zjj-ej-9T3"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="FW5-gX-VTp" id="EhV-Bb-YCO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sQm-Eb-5F9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98375" y="745"/>
+        </scene>
+        <!--감상문 목록-->
+        <scene sceneID="FIf-ly-EOa">
+            <objects>
+                <viewController storyboardIdentifier="ReviewViewController" id="75K-wP-kEj" customClass="ReviewViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XNp-lX-vNO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Rbb-rz-1Xt">
+                                <rect key="frame" x="16" y="94" width="343" height="553"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j82-jO-JG4">
+                                    <size key="itemSize" width="103" height="215"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReviewCollectionViewCell" id="eSx-5W-xfr" customClass="ReviewCollectionViewCell" customModule="Book" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="103" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="103" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jv9-zG-Jq3">
+                                                    <rect key="frame" x="4" y="6" width="95" height="135"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="책이름" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrV-dx-ztJ">
+                                                    <rect key="frame" x="4" y="148" width="95" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2018-12-01" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zz-Qh-KQr">
+                                                    <rect key="frame" x="20" y="167" width="65" height="39"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="bookname" destination="yrV-dx-ztJ" id="z6T-ZD-4QJ"/>
+                                            <outlet property="imgView" destination="Jv9-zG-Jq3" id="Ceb-1Z-g98"/>
+                                            <outlet property="regdate" destination="1zz-Qh-KQr" id="Cf2-6P-klI"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ibh-AQ-cdU" firstAttribute="bottom" secondItem="Rbb-rz-1Xt" secondAttribute="bottom" constant="20" id="ApY-4k-k5J"/>
+                            <constraint firstItem="Rbb-rz-1Xt" firstAttribute="leading" secondItem="ibh-AQ-cdU" secondAttribute="leading" constant="16" id="jwZ-ph-XSK"/>
+                            <constraint firstItem="ibh-AQ-cdU" firstAttribute="trailing" secondItem="Rbb-rz-1Xt" secondAttribute="trailing" constant="16" id="wdw-hV-qIc"/>
+                            <constraint firstItem="Rbb-rz-1Xt" firstAttribute="top" secondItem="ibh-AQ-cdU" secondAttribute="top" constant="74" id="y29-YD-RJX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ibh-AQ-cdU"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="감상문 목록" id="dNN-uD-kv9">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qeU-td-gMe"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Rbb-rz-1Xt" id="OH4-HF-AaU"/>
+                        <segue destination="Etq-u5-qae" kind="show" id="IRF-54-AZ6"/>
+                        <segue destination="r80-d3-GjK" kind="show" id="vTS-HO-LiI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3N-km-TXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94294" y="702"/>
+        </scene>
+        <!--감상문 작성-->
+        <scene sceneID="fCW-tF-woX">
+            <objects>
+                <viewController storyboardIdentifier="ReviewInsertViewController" id="Etq-u5-qae" customClass="ReviewInsertViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ts7-6M-f4c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsX-FG-OGF">
+                                <rect key="frame" x="33" y="81" width="107" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="책이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xH-mo-POJ">
+                                <rect key="frame" x="37" y="275" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="작가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tAX-NO-TnT">
+                                <rect key="frame" x="37" y="323" width="60" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="감상문" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTd-RN-x4f">
+                                <rect key="frame" x="33" y="370" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Xi-6y-IZY">
+                                <rect key="frame" x="115" y="270" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PS1-lC-IWy">
+                                <rect key="frame" x="115" y="318" width="244" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xkU-cl-Qmu">
+                                <rect key="frame" x="0.0" y="399" width="416" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85905116579999996" green="0.85905116579999996" blue="0.85905116579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="lZt-XE-o5p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="감상문 작성" id="kwO-W1-Dao">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="camera" id="6CT-kO-UuQ">
+                                <connections>
+                                    <action selector="pick:" destination="Etq-u5-qae" id="9PI-sX-EUE"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="저장" id="hBd-pJ-D6R">
+                                <connections>
+                                    <action selector="save:" destination="Etq-u5-qae" id="3LT-XP-moh"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bookInsert" destination="8Xi-6y-IZY" id="s4X-zh-aG2"/>
+                        <outlet property="imgInsert" destination="nsX-FG-OGF" id="Gpu-Pf-pYs"/>
+                        <outlet property="writerInsert" destination="PS1-lC-IWy" id="a46-FR-9c5"/>
+                        <outlet property="writingInsert" destination="xkU-cl-Qmu" id="W6f-Zo-qPP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aDx-67-zd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93484" y="703.89805097451278"/>
+        </scene>
+        <!--상세보기-->
+        <scene sceneID="k1Q-uJ-sNW">
+            <objects>
+                <viewController storyboardIdentifier="ReviewDetailViewController" id="r80-d3-GjK" customClass="ReviewDetailViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mPC-lO-QbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="책이름:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYN-De-7N5">
+                                <rect key="frame" x="35" y="314" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="작가:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypO-c4-Ta4">
+                                <rect key="frame" x="39" y="366" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="감상문:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91v-Et-fIL">
+                                <rect key="frame" x="31" y="422" width="68" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="책이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="px2-XQ-8pw">
+                                <rect key="frame" x="119" y="314" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5wi-Lu-VQp">
+                                <rect key="frame" x="35" y="99" width="118" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="작가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qh-oR-Av6">
+                                <rect key="frame" x="119" y="365" width="189" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="감상문" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qka-6L-FV3">
+                                <rect key="frame" x="119" y="422" width="240" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.85905116579999996" green="0.85905116579999996" blue="0.85905116579999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eNW-Pr-qsy"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="상세보기" id="zNS-7P-O3o"/>
+                    <connections>
+                        <outlet property="bookDetail" destination="px2-XQ-8pw" id="aXi-B5-M4u"/>
+                        <outlet property="imgDetail" destination="5wi-Lu-VQp" id="52L-vq-C1F"/>
+                        <outlet property="reviewDetail" destination="Qka-6L-FV3" id="XKl-1i-jqN"/>
+                        <outlet property="writerDetail" destination="6qh-oR-Av6" id="QFh-xv-0b2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CGw-OJ-mk7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93484" y="1507.1964017991006"/>
+        </scene>
+        <!--ProfileVC-->
+        <scene sceneID="Kwt-nw-lpw">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="AR7-aL-fhr" customClass="ProfileVC" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="92M-H4-QwG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yN0-qV-RFs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYG-wg-EG2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97378" y="-2266"/>
+        </scene>
+        <!--Reveal View Controller-->
+        <scene sceneID="sje-M6-ySx">
+            <objects>
+                <viewController id="WPe-pA-lsT" customClass="SWRevealViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ead-KU-xjO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ATw-QD-il1"/>
+                    </view>
+                    <connections>
+                        <segue destination="ovm-wn-1St" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="Tie-Ez-GSl"/>
+                        <segue destination="god-Yd-mga" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="IpZ-U6-OZX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Hz-ag-ZWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97370" y="-1567"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uhT-mf-rO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="god-Yd-mga" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FU8-Ih-QsF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZwN-dm-CXY" kind="relationship" relationship="rootViewController" id="qJf-P2-iUb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gkU-lY-En9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96466" y="-1567"/>
+        </scene>
+        <!--Side BarVC-->
+        <scene sceneID="P0w-ho-gQo">
+            <objects>
+                <tableViewController id="ovm-wn-1St" customClass="SideBarVC" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yn9-ZC-eFa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" id="FnP-8s-4cN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FnP-8s-4cN" id="try-X1-9za">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ovm-wn-1St" id="6fV-1f-VqX"/>
+                            <outlet property="delegate" destination="ovm-wn-1St" id="4U7-4D-fkg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JGS-pE-rO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97370" y="-839"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NjO-O9-Bqd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1ez-P0-ecR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P03-B3-8mI">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PlQ-Ks-oID" kind="relationship" relationship="rootViewController" id="eso-Ts-I7s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAN-Lf-n2m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-99055" y="2"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="o1a-hT-7nV">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="kVB-ME-Dtt" customClass="MapViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CoP-VP-xQL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o1q-Fe-k3F">
+                                <rect key="frame" x="16" y="623" width="343" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Zoom" id="RBM-Ur-drm">
+                                        <connections>
+                                            <action selector="zoom:" destination="kVB-ME-Dtt" id="I0e-3S-F3o"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="e6D-HK-fk3"/>
+                                    <barButtonItem title="검색리스트" id="EFO-VX-QGd">
+                                        <connections>
+                                            <action selector="moveDetail:" destination="kVB-ME-Dtt" id="jRZ-3y-RUh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xdu-cU-sbf"/>
+                                    <barButtonItem title="Type" id="jEr-tj-DTL">
+                                        <connections>
+                                            <action selector="type:" destination="kVB-ME-Dtt" id="bYy-5k-erz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="twQ-Az-X2g">
+                                <rect key="frame" x="16" y="131" width="343" height="492"/>
+                            </mapView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="서점 또는 도서관을 입력하세요." borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OjI-Pu-oQ2">
+                                <rect key="frame" x="124" y="89" width="211" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="search:" destination="kVB-ME-Dtt" eventType="editingDidEndOnExit" id="hSC-5r-8uV"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="검색어" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfI-3X-Hwu">
+                                <rect key="frame" x="49" y="89" width="45" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yBa-L0-Jmc" firstAttribute="bottom" secondItem="twQ-Az-X2g" secondAttribute="bottom" constant="44" id="02p-Lr-jx0"/>
+                            <constraint firstItem="OjI-Pu-oQ2" firstAttribute="leading" secondItem="wfI-3X-Hwu" secondAttribute="trailing" constant="28" id="3I2-4W-8Qj"/>
+                            <constraint firstItem="wfI-3X-Hwu" firstAttribute="leading" secondItem="yBa-L0-Jmc" secondAttribute="leading" constant="51" id="6fe-KJ-y0y"/>
+                            <constraint firstItem="twQ-Az-X2g" firstAttribute="leading" secondItem="yBa-L0-Jmc" secondAttribute="leading" constant="16" id="FsQ-2g-lzi"/>
+                            <constraint firstItem="yBa-L0-Jmc" firstAttribute="trailing" secondItem="twQ-Az-X2g" secondAttribute="trailing" constant="16" id="GUM-c1-169"/>
+                            <constraint firstItem="wfI-3X-Hwu" firstAttribute="top" secondItem="yBa-L0-Jmc" secondAttribute="top" constant="28" id="JBm-CA-UXd"/>
+                            <constraint firstItem="twQ-Az-X2g" firstAttribute="top" secondItem="OjI-Pu-oQ2" secondAttribute="bottom" constant="21" id="Tg1-JY-iLf"/>
+                            <constraint firstItem="OjI-Pu-oQ2" firstAttribute="top" secondItem="yBa-L0-Jmc" secondAttribute="top" constant="25" id="hsn-2S-WNw"/>
+                            <constraint firstItem="yBa-L0-Jmc" firstAttribute="trailing" secondItem="OjI-Pu-oQ2" secondAttribute="trailing" constant="40" id="kPa-gr-A2S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yBa-L0-Jmc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hiP-GS-bZa"/>
+                    <connections>
+                        <outlet property="mapView" destination="twQ-Az-X2g" id="Exu-gH-kfC"/>
+                        <outlet property="tf" destination="OjI-Pu-oQ2" id="jly-1k-Zyx"/>
+                        <segue destination="btm-KY-ZR4" kind="show" id="qRz-5J-V8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoY-7D-vDd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96878" y="1785"/>
+        </scene>
+        <!--Map Detail Table View Controller-->
+        <scene sceneID="bDh-au-alg">
+            <objects>
+                <tableViewController storyboardIdentifier="MapDetailTableViewController" id="btm-KY-ZR4" customClass="MapDetailTableViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="68" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jy9-KX-3Ai">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MyCell" id="rAG-zB-0gh" customClass="MapDetailTableViewCell" customModule="Book" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="68"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rAG-zB-0gh" id="u3w-fh-oY2">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="67.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfO-Eg-UUR">
+                                            <rect key="frame" x="16" y="38" width="185" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1z-h6-qYI">
+                                            <rect key="frame" x="16" y="9" width="185" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblName" destination="z1z-h6-qYI" id="xRP-YD-HpH"/>
+                                    <outlet property="lblPhone" destination="DfO-Eg-UUR" id="g3l-QX-HQW"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="btm-KY-ZR4" id="U12-7T-Z6f"/>
+                            <outlet property="delegate" destination="btm-KY-ZR4" id="Mrs-xj-sTj"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="k0N-5Z-PNW" kind="show" id="rtd-p5-OKu"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WQZ-Fg-ivG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-96202" y="1785"/>
+        </scene>
+        <!--Route View Controller-->
+        <scene sceneID="ztX-MM-gYx">
+            <objects>
+                <viewController storyboardIdentifier="RouteViewController" id="k0N-5Z-PNW" customClass="RouteViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOs-U5-9vs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZKW-9Z-UdI">
+                                <rect key="frame" x="16" y="75" width="343" height="572"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZKW-9Z-UdI" firstAttribute="top" secondItem="NLF-gm-zdh" secondAttribute="top" constant="11" id="U0L-fT-JY8"/>
+                            <constraint firstItem="NLF-gm-zdh" firstAttribute="bottom" secondItem="ZKW-9Z-UdI" secondAttribute="bottom" constant="20" id="aaW-Zg-Jiz"/>
+                            <constraint firstItem="ZKW-9Z-UdI" firstAttribute="leading" secondItem="NLF-gm-zdh" secondAttribute="leading" constant="16" id="bSn-XH-aMB"/>
+                            <constraint firstItem="NLF-gm-zdh" firstAttribute="trailing" secondItem="ZKW-9Z-UdI" secondAttribute="trailing" constant="16" id="vxg-Kz-d6Q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NLF-gm-zdh"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="ZKW-9Z-UdI" id="HAO-9d-gyD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7p-YW-BYk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95506" y="1785"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="inW-aB-ymc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="E11-TY-4qU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EqH-dm-4iz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kVB-ME-Dtt" kind="relationship" relationship="rootViewController" id="q4v-uO-L07"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdU-o3-wJO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97818" y="1784"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qWT-1E-omL">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="3tM-53-j53" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="144-Nb-2na">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="h30-EN-jGR" kind="show" id="abS-ak-9CT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ieh-FB-icV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94297" y="-788"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="g57-Df-NIN">
+            <objects>
+                <tableViewController storyboardIdentifier="SearchTableViewController" id="h30-EN-jGR" customClass="SearchTableViewController" customModule="Book" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eVu-6h-o88">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textField key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="책 이름을 입력하세요." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" id="DIh-8N-LHa">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="textColor" red="0.65197943650000001" green="0.65197943650000001" blue="0.65197943650000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchCell" rowHeight="86" id="AX6-Dv-nI5" customClass="SearchCell" customModule="Book" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="58" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AX6-Dv-nI5" id="SP5-hE-Tht">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="85.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I6B-W6-7Zq">
+                                            <rect key="frame" x="8" y="2" width="69" height="73"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="책제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-tk-VyU">
+                                            <rect key="frame" x="92" y="11" width="185" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="작가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baW-6H-lzB">
+                                            <rect key="frame" x="92" y="47" width="101" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblTitle" destination="Oh3-tk-VyU" id="7nO-rA-G69"/>
+                                    <outlet property="lblWriter" destination="baW-6H-lzB" id="cgX-gc-9RW"/>
+                                    <outlet property="thumbnailImage" destination="I6B-W6-7Zq" id="ee9-Uc-dKF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="h30-EN-jGR" id="4vr-8u-wYF"/>
+                            <outlet property="delegate" destination="h30-EN-jGR" id="0ki-bM-ueT"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="tnf-US-I27"/>
+                    <connections>
+                        <outlet property="tf" destination="DIh-8N-LHa" id="2uV-ti-ocX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23q-b2-Fad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93484" y="-788"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="account.jpg" width="60" height="60"/>
+        <image name="sidemenu.png" width="30" height="30"/>
+    </resources>
+</document>
